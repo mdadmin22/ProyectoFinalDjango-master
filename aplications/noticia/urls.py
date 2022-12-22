@@ -8,10 +8,11 @@ urlpatterns = [
     #path('usuario/', views.CargarNoticia.as_view()),
     
     #path('login/', views.Login.as_view()),
-    path('noticia/', views.ListarNoticias.as_view(), name='vernoticias'),
+    path('Feed', views.ListarNoticias.as_view(), name='vernoticias'),
     path('noti/', views.NoticiasCreateView.as_view(), name='noticias'),
-    
-    
+    path('noticias/', views.MostrarNoticias.as_view(), name='muestranoticia'),
+    path('noticias/<pk>/', views.MostrarDetalleNoticia.as_view(), name='detallenoticia'),
+         
 
     
 ]       

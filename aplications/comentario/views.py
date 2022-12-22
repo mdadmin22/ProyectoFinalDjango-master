@@ -24,3 +24,10 @@ class ComentarioCreateView(CreateView):
         context = super().get_context_data(**kwargs)
         context["comentarios"] = Comentarios.objects.all()
         return context
+    
+    
+    #def get_context_filter(self, *args, **kwargs):
+     #   context = super().get_context_filter(**kwargs)      
+      #  comentarios = Comentarios.objects.filter(noticia_id=context["noticia"].id)
+       # context["comentarios"] = comentarios  
+        #return context
