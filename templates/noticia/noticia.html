@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Noticias de la fundacion Mi Bella Ciudad</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../../static/crearcategoria.css">
+</head>
+
+<body>
+    <h1> Noticias </h1>
+
+    <button><a href="{% url 'nuevacategoria' %}">Crear Categoria</a></button>
+
+    <form method="post">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">
+            Cargar Noticia!
+        </button>
+    </form>
+
+</body>
+
+</html>

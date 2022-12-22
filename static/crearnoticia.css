@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(114, 185, 233);
+    
+    }
+h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    
+ 
+}
+
+.w-100 {
+    width: 45%!important;
+    margin-left: 45px;
+    
+}
