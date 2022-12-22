@@ -45,5 +45,5 @@ class UsuarioCreateView(CreateView):
 
 def Salir(request):
     logout (request)
-    return redirect ('/noticia')
+    return redirect ('/')
    
